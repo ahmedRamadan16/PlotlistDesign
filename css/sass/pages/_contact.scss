@@ -1,0 +1,95 @@
+.location-section{
+    padding:100px 0 ;
+    .row {
+        justify-content: flex-start;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        gap: 4rem;
+        background-color: #eee;
+        @include breakBoints(Tablet)
+        {
+            flex-direction: column;
+        }
+        .frame{
+            width: 600px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            @include breakBoints(Tablet)
+            {
+                width: 100%;
+            }
+            iframe{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+
+            }
+        }
+        form{
+
+            flex: 1;
+            input:not(input[type="checkbox"],input[type="submit"]){
+                padding: 1rem ;
+                border: 1px solid $main-color;
+                border-radius: 10px;
+                margin-right: 10px;
+                width: 300px;
+                margin-bottom: 20px;
+                background-color: transparent;
+                outline: none;
+                @include breakBoints(Tablet)
+                {
+                    width: 347px;
+                }
+                @include breakBoints(Mobile)
+                {
+                    width: 343px;
+                    margin-right: 0;
+                }
+            }
+            input[type="email"]
+            {
+                width: calc(100% - 10px) !important;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                gap: 2rem;
+                margin: 2rem 0;
+                li{
+                    color: $main-color;
+                    input{
+                        width: 20px;
+                        height: 20px;
+                        border-color: $main-color;
+                    }
+                }
+            }
+            textarea{
+                width: calc(100% - 10px);
+                background-color: transparent;
+                border-radius: 10px;
+                border: 1px solid $main-color;
+                outline: none;
+            }    
+            .send-message{
+                margin: 2rem 0;
+                background-color: $secondary-color;
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                padding: 1.5rem 3rem; 
+                border-radius: 10px;
+                cursor: pointer;
+                input{
+                    background: transparent;
+                    border: none !important;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}

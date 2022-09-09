@@ -1,0 +1,98 @@
+.landing
+{
+
+
+padding-top: 91.45px;
+    background-image: url('../../../imgs/heading-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    @extend %flex;
+    .row 
+    {
+        flex-direction: column;
+        color: #fff;
+        h4{
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        h1 {
+            font-size: 4rem;
+            margin-top: .5rem;
+            font-weight: bold;
+        }
+        form 
+        {
+            @extend %flex;
+            flex-wrap: wrap;
+            width: 100%;
+            select,input[type="text"],.search{
+                padding: 1.6rem 2rem;
+                width: calc(100% / 4 );
+                border: none;
+                outline: none;
+                position: relative;
+                color: #777;
+                font-size: 1.2rem;
+            }
+           
+            select 
+            {
+                &:first-of-type
+                {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+
+                }
+              
+                
+            }
+            .search{
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background-color: $main-color;
+                @extend %flex;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1rem;
+                cursor: pointer;
+                input {
+                    background: transparent;
+                    border: none;
+                    color: #fff;
+                }
+                svg{
+                    border-radius: 50%;
+                    background-color: #fff;
+                    padding: .8rem;
+                }
+            }
+          
+         
+        }
+        .icons
+        {
+            @extend %flex;
+            margin: 2rem auto;
+            justify-content: space-between;
+            width: 70%;
+            .image{
+                @extend %flex;
+                flex-direction: column;
+              img{
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 2rem;
+                    margin-bottom: 1rem;
+                    transition: .3s ease-in;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
+            }
+                cursor: pointer;
+              
+            }
+        }
+    }
+}

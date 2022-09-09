@@ -1,0 +1,102 @@
+header  
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom:1px solid #968d8d;
+    padding: 1rem 0;
+    .row{
+    height: 100%;
+    position: relative;
+
+    .logo
+    {
+        height: 100%;
+        @extend %flex;
+    } 
+    nav  
+    {
+        @include breakBoints(Tablet)
+        {
+            .add-button{
+                display: none;
+            }
+            svg{
+                color: #fff;
+                display: block !important;
+                cursor: pointer;
+            }
+            ul{
+                position: absolute;
+                top: calc(100% + 18px);
+                left: 0;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start !important;
+                background-color: $secondary-color;
+                display: none !important;
+                &.apper{
+                    display: flex   !important;
+                }
+                a{
+                    padding: 1rem  !important;
+                    display: block;
+                    color: #fff !important;
+                }
+            }
+        }
+        @extend %flex;
+        height: 100%;
+
+        gap: 2rem;
+        svg{
+            display: none
+        }
+        ul{
+        @extend %flex;
+            li 
+            {
+                a{
+                    padding: 1rem 2rem;
+                    text-transform: uppercase;
+                    transition: .3s ease-in;
+                    color: #fff;
+                    &:hover{
+                        color: $main-color;
+                    } 
+                }
+                &.active a{
+                    color: $main-color;
+                }
+            }
+            
+    }
+    }
+   
+
+}
+&.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,.1);
+    z-index: 1000;
+   nav {    
+    svg{
+        color: $main-color;
+    }
+    ul {
+        li{
+            a{
+                color: black;
+            }
+        }
+    }
+    $header-sticky:true;
+   }
+}
+}
+
+

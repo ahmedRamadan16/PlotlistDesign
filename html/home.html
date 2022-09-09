@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <title>Plotlist</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--NORMAILZE CSS-->
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="logo">
+            <img src="../imgs/white-logo.png" alt="white-logo" />
+          </div>
+          <nav>
+            <i class="fa fa-bars fa-2x"></i>
+            <ul class="list-unstyled">
+              <li class="active">
+                <a href="home.html">Home</a>
+              </li>
+
+              <li class="">
+                <a href="category.html">Category</a>
+              </li>
+
+              <li class="">
+                <a href="listing.html">Listing</a>
+              </li>
+
+              <li class="">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <div class="add-button">
+              <i class="fa fa-plus"></i>Add Your Listing
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="home-landing">
+      <div class="container">
+        <div class="row">
+          <h4 class="text-center">OVER 36,500+ ACTIVE LISTINGS</h4>
+          <h1 class="text-center">Find Nearby Places & Things</h1>
+          <form action="">
+            <select name="area" id="area">
+              <option value="0">All Areas</option>
+              <option value="1">New Village</option>
+              <option value="2">Old Town</option>
+              <option value="3">Modern City</option>
+            </select>
+            <input type="text" placeholder="Enter a Location" />
+
+            <select name="price" id="price">
+              <option value="0">Price Range</option>
+              <option value="1">$100-$250</option>
+              <option value="2">$250-$500</option>
+              <option value="3">$500,$1,000</option>
+              <option value="4">$1,000 or more</option>
+            </select>
+            <div class="search">
+              <i class="fa fa-search"></i>
+              <input type="submit" value="Search Now" />
+            </div>
+          </form>
+          <div class="icons">
+            <div class="image">
+              <img src="../imgs/search-icon-01.png" alt="" />
+              <span>Apartments</span>
+            </div>
+            <div class="image">
+              <img src="../imgs/search-icon-02.png" alt="" />
+              <span>Food & Life</span>
+            </div>
+            <div class="image">
+              <img src="../imgs/search-icon-03.png" alt="" />
+              <span>Cars</span>
+            </div>
+            <div class="image">
+              <img src="../imgs/search-icon-04.png" alt="" />
+              <span>Shopping</span>
+            </div>
+            <div class="image">
+              <img src="../imgs/search-icon-05.png" alt="" />
+              <span>Traveling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--START CATEGORIES-->
+    <div class="categories">
+      <div class="container">
+        <h2 class="text-center">Popular Categories</h2>
+        <p class="text-center">CHECK THEM OUT</p>
+        <div class="row">
+          <aside class="links">
+            <ul class="list-unstyled">
+              <li class="active" data-source="#apartments">
+                <img src="../imgs/search-icon-01.png" alt="" /><span>Apartments</span>
+              </li>
+              <li data-source="#food-life">
+                <img src="../imgs/search-icon-02.png" alt="" /><span>Food & Life</span>
+              </li>
+              <li data-source="#cars">
+                <img src="../imgs/search-icon-03.png" alt="" /><span>Cars</span>
+              </li>
+              <li data-source="#shopping">
+                <img src="../imgs/search-icon-04.png" alt="" /><span>Shopping</span>
+              </li>
+              <li data-source="#traveling">
+                <img src="../imgs/search-icon-05.png" alt="" /><span>Traveling</span>
+              </li>
+            </ul>
+          </aside>
+          <div class="categories-content">
+            <div class="content active" id="apartments">
+              <div class="left">
+                <h2>One Of The Most Trending Stuffs Right Now!</h2>
+                <p>
+                  Plot Listing is a responsive Bootstrap 5 website template that
+                  included 4 different HTML pages. This template is provided by
+                  TemplateMo website. You can apply this layout for your static
+                  or dynamic CMS websites.
+                </p>
+
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Discover More
+                </div>
+              </div>
+              <div class="right">
+                <img src="../imgs/tabs-image-01.jpg" alt="" />
+              </div>
+            </div>
+            <div class="content" id="food-life">
+              <div class="left">
+                <h2>Food and Lifestyle category is here</h2>
+                <p>
+                  You can feel free to download, edit and apply this template
+                  for your website. Please tell your friends about TemplateMo
+                  website.
+                </p>
+
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Explore More
+                </div>
+              </div>
+              <div class="right">
+                <img src="../imgs/tabs-image-02.jpg" alt="" />
+              </div>
+            </div>
+            <div class="content" id="cars">
+              <div class="left">
+                <h2>Best car rentals for your trips!</h2>
+                <p>
+                  Did you know? You can get the best free HTML templates on Too
+                  CSS blog. Visit the blog pages and explore fresh and latest
+                  website templates.
+                </p>
+
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>More Listing
+                </div>
+              </div>
+              <div class="right">
+                <img src="../imgs/tabs-image-03.jpg" alt="" />
+              </div>
+            </div>
+            <div class="content" id="shopping">
+              <div class="left">
+                <h2>Shopping List: Images from Unsplash</h2>
+                <p>
+                  Image credits go to Unsplash website that provides free stock
+                  photos for anyone. Images used in this Plot Listing template
+                  are from Unsplash.
+                </p>
+
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Discover More
+                </div>
+              </div>
+              <div class="right">
+                <img src="../imgs/tabs-image-04.jpg" alt="" />
+              </div>
+            </div>
+            <div class="content" id="traveling">
+              <div class="left">
+                <h2>Information and Safety Tips for Traveling</h2>
+                <p>Information and Safety Tips for Traveling</p>
+
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Read More
+                </div>
+              </div>
+              <div class="right">
+                <img src="../imgs/tabs-image-05.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--END CATEGORIES-->
+    <!--START RECENT LISTING-->
+    <div class="recent-listing   ">
+      <div class="container ">
+        <h2 class="text-center">Recent Listing</h2>
+        <p class="text-center">CHECK THEM OUT</p>
+        <div class="swiper-container">
+        <div class="row  ">
+          <div class="col swiper-slide" data-index="0">
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-01.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-02.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-03.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col swiper-slide" data-index="1">
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-04.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-05.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-06.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col swiper-slide" data-index="0">
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-04.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-05.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+            <div class="listin-content">
+              <div class="left">
+                <img src="../imgs/listing-01.jpg" alt="" />
+              </div>
+              <div class="right">
+                <div class="head">
+                  <h2>1.First Apartments Unit</h2>
+                  <div class="stars">
+                    <ul class="list-unstyled">
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+
+                      <li>
+                        <i class="fa fa-star"></i>
+                      </li>
+                    </ul>
+                    <span>(18)Reviews</span>
+                  </div>
+                </div>
+                <span>by: Sale Agent</span>
+                <div class="price">
+                  <div class="icon">
+                    <img src="../imgs/listing-icon-01.png" alt="" />
+                  </div>
+                  <span>$450-$950/month with taxes</span>
+                </div>
+                <p>Details: <span>2760sq ft</span></p>
+                <div class="badrooms">
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-02.png" alt="" />
+                    <span>5 Bedrooms</span>
+                  </div>
+
+                  <div class="badroom">
+                    <img src="../imgs/listing-icon-03.png" alt="" />
+                    <span>8 Bedrooms</span>
+                  </div>
+                </div>
+                <div class="add-button">
+                  <i class="fa fa-plus"></i>Add Your Listing
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+            <ul class="list-unstyled">
+            <li class="active" data-index="0"></li>
+            <li data-index="1"></li>
+            <li data-index="2"></li>
+        </ul>
+        </div>
+    </div>
+      </div>
+    </div>
+
+    <!--END RECENT LISTING-->
+    <!--START FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="../imgs/black-logo.png" alt="">
+                    <p>If you consider that Plot Listing template is useful for your website, please support us a little via PayPal.
+
+                    </p>
+                </div>
+                <div class="col">
+                    <h2>Helpful Links</h2>
+                    <div class="links">
+                        <ul class="list-unstyled">
+                            <li><a href="#categories.html">Categories</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <li><a href="#listing.html">Listing</a></li>
+                            <li><a href="#contact.html">Contact Us</a></li>
+
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Awards</a></li>
+                            <li><a href="#">Useful Sites</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2>Contact Us</h2>
+                    <p>27th Street of New Town, Digital Villa
+
+                    </p>
+                   <div class="phones">
+                    <a href="#">010-020-0340</a>
+                    <a href="#">090-080-0760</a>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+            </p>
+            <span>Design: TempleteMo</span>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <script src="../js/script.js"></script>
+    <script src="../js/all.min.js"></script>
+   
+  </body>
+</html>

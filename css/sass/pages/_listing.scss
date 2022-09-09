@@ -1,0 +1,198 @@
+.listing-section{
+    padding: 100px 0;
+   .row {
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 50px 0;
+    @include breakBoints(Tablet)
+    {
+        flex-direction: column;
+    }
+  .links 
+  {
+      max-width: 500px;
+      height: 100%;
+      @include breakBoints(Tablet)
+    {
+      width: 100%;
+      max-width: 100%;
+    }
+      ul {
+          height: 100%;
+          li{
+              @include breakBoints(Tablet)
+              {
+                  width: 100%;
+                  span{
+                      display: none;
+                  }
+                  img{
+                      margin: 0 auto;
+                  }
+              }
+              padding: 2rem;
+              background-color: $main-color;
+              font-size: 20px;
+              height: calc(700px / 5);
+              @extend %flex;
+              cursor: pointer;
+              gap: 1rem;
+              transition: .3s ease-in;
+              img{
+                  padding: 1rem ;
+                  background-color: #fff;
+                  border-radius: 50%;
+              }
+              &.active{
+                  background-color: $secondary-color;
+              }
+          }
+      }
+  }
+  .recent-listin
+{
+            
+    max-width: 100%;
+    width: 1000px;
+        .swiper-container
+        {
+            position: relative;
+        .content {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .col{
+                width: 100%;
+                position: relative;
+                @include breakBoints(Tablet)
+                {
+                    flex-direction: column;
+                    width: 100%;
+                    position:initial;
+                }
+                .listin-content
+                {
+                    display: flex;
+                    gap: 2rem;
+                    background-color: #eee;
+                    margin-bottom: 2rem;
+                    border-radius: 10px;
+                    @include breakBoints(Tablet)
+                    {
+                        flex-direction: column;
+                    }
+                    .left {
+                        img {
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            max-width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            @include breakBoints(Tablet)
+                            {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .right {
+                        flex: 1;
+                        padding: 2rem;
+
+                        .head{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 5rem;
+                            @include breakBoints(Tablet)
+                            {
+                                flex-direction: column;
+                                gap: 0;
+                            }
+                            .stars
+                            {
+                                @extend %flex;
+                                gap: 1rem;
+                                color: #777;
+                                @include breakBoints(Tablet)
+                                {
+                                 order: -1
+                                }
+                                ul{
+                                    @extend %flex;
+                                    gap: .5rem;
+                                    
+                                }
+                            }
+                        }
+                        > span{
+                            color: #777;
+                        }
+                        .price {
+                            @extend %flex;
+                            gap: 1rem;
+                            margin: 1rem 0;
+                            img{
+                                padding: .5rem;
+                                background-color: $secondary-color;
+                                border-radius: 50%;
+                                
+                            }
+                        }
+                        > P{
+                            color: #777;
+                            span{
+                                color: black;
+                            }
+                        }
+                        .badrooms{
+                            margin-top: 2rem;
+                            .badroom{
+                                @extend %flex;
+                                gap: 1rem;
+                                margin-bottom: 1rem;
+                                font-size: 1.3rem;
+                            }
+                        }
+                        .add-button{
+                            width: fit-content;
+                            margin-left: auto ;
+                            @include breakBoints(Tablet)
+                            {
+                             margin-left: 0;
+                             margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination
+        {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -40px;
+            ul 
+            {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                li{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid  #ddd;
+                    cursor: pointer;
+                    &.active{
+                        background-color: $main-color;
+                    }
+                    }
+
+            }
+        }
+    }
+}
+   }
+}

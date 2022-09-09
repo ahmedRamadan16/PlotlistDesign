@@ -1,0 +1,52 @@
+
+@if $header-sticky
+{
+
+
+.add-button
+{
+    background-color: white;
+    padding: .5rem 2rem;
+    border-radius: .6rem;
+    cursor: pointer;
+    @extend %flex;
+    transition: .3s ease-in;
+    svg
+    {
+        background-color: $main-color;
+        border-radius: 50%;
+        color: #fff;
+        margin-right: .6rem;
+        padding: .3rem;
+    }
+    &:hover 
+    {
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+}@else{
+    .add-button
+{
+    background-color: $main-color;
+    padding: .5rem 2rem;
+    border-radius: .6rem;
+    color: #fff;
+    cursor: pointer;
+    @extend %flex;
+    transition: .3s ease-in;
+    svg
+    {
+        background-color: #fff;
+        border-radius: 50%;
+        color: $main-color;
+        margin-right: .6rem;
+        padding: .3rem;
+    }
+    &:hover 
+    {
+        background-color: #fff;
+        color: $main-color;
+    }
+}
+}

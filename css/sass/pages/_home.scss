@@ -1,0 +1,423 @@
+/*categories*/
+.home-landing
+{
+padding-top: 91.45px;
+    background-image: url("../../../imgs/banner-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 290px 0 180px 0;
+  
+    @extend %flex;
+    .row 
+    {
+        flex-direction: column;
+        padding: 100px 0;
+        color: #fff;
+        h4{
+            font-size: 1.5rem;
+            margin: 0;
+            
+            @include breakBoints(Mobile)
+            {
+                font-size: 1rem;
+            }
+        }
+        h1 {
+            font-size: 4rem;
+            margin-top: .5rem;
+            font-weight: bold;
+            @include breakBoints(Mobile)
+            {
+                font-size: 2rem;
+            }
+        }
+        form 
+        {
+            @include breakBoints(Tablet)
+            {
+                flex-direction: column;
+                align-items: flex-start;
+                padding:2rem !important;
+                background-color: #fff;
+                border-radius: 20px;
+            }
+            @extend %flex;
+            flex-wrap: wrap;
+            width: 100%;
+            select,input[type="text"],.search{
+                padding: 1.6rem 2rem;
+                width: calc(100% / 4 );
+                border: none;
+                outline: none;
+                position: relative;
+                color: #777;
+                font-size: 1.2rem;
+                @include breakBoints(Tablet)
+                {
+                    width: 100%;
+                    border: 1px solid $main-color;
+                    border-radius: 10px;
+                    margin: 1rem 0;
+                    padding: .7rem ;
+                }
+            }
+           
+            select 
+            {
+                &:first-of-type
+                {
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+
+                }
+   
+                
+            }
+            .search{
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background-color: $main-color;
+                @extend %flex;
+                justify-content: center;
+                gap: 1rem;
+                padding: 1rem;
+                cursor: pointer;
+                input {
+                    background: transparent;
+                    border: none;
+                    color: #fff;
+                }
+                svg{
+                    border-radius: 50%;
+                    background-color: #fff;
+                    padding: .8rem;
+                }
+            }
+          
+         
+        }
+        .icons
+        {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 3rem;
+            margin: 2rem 0;
+            justify-content: space-between;
+            @include breakBoints(Mobile)
+            {
+                grid-template-columns: repeat(2,1fr)
+            }
+            .image{
+                @extend %flex;
+                flex-direction: column;
+              img{
+                background-color: #fff;
+                border-radius: 50%;
+                padding: 2rem;
+                    margin-bottom: 1rem;
+                    transition: .3s ease-in;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
+            }
+                cursor: pointer;
+              
+            }
+        }
+    }
+}
+
+.categories{
+    padding: 100px 0;
+    .container
+    {
+    >{
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        p{
+            color: $main-color;
+            font-size: 18px;
+        }
+    }
+    .row {
+        align-items: flex-start;
+        background-color: $secondary-color;
+        color: #fff;
+        min-height:700px;
+        border-radius: 10px;
+        gap: 1.5rem;
+        overflow: hidden;
+        @include breakBoints(Tablet)
+        {
+            flex-direction: column;
+        }
+        .links 
+        {
+            max-width: 500px;
+            height: 100%;
+            @include breakBoints(Tablet)
+          {
+            width: 100%;
+            max-width: 100%;
+          }
+            ul {
+                height: 100%;
+                li{
+                    @include breakBoints(Tablet)
+                    {
+                        width: 100%;
+                        span{
+                            display: none;
+                        }
+                        img{
+                            margin: 0 auto;
+                        }
+                    }
+                    padding: 2rem;
+                    background-color: $main-color;
+                    font-size: 20px;
+                    height: calc(700px / 5);
+                    @extend %flex;
+                    cursor: pointer;
+                    gap: 1rem;
+                    transition: .3s ease-in;
+                    img{
+                        padding: 1rem ;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                    &.active{
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+        .categories-content
+        {
+         overflow: hidden;
+         position: relative;
+         @include breakBoints(Tablet)
+         {
+            width: 100%;
+        }
+            .content{
+                padding: 3rem;
+                @extend %flex;
+                gap:2rem;
+                opacity: 0;
+                transform: translateX(-50px);
+                list-style: none;
+                transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                position: absolute;     
+                
+                @include breakBoints(Tablet)
+        {
+            flex-direction: column;
+            padding: 2rem;
+            transform: translateX(0) translateY(-50px);
+            
+        }
+                &.active{
+                    transition-delay: 0.3s;
+                    position: relative;
+                    z-index: 2;
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+                .left{
+                    @include breakBoints(Tablet)
+                    {
+                        width: 100%;
+                    }
+                    h2{
+                        line-height: 1.7;
+                        font-size: 18px;
+                    }
+                    p{
+                        line-height: 1.7;
+                    }
+                    .add-button{
+                        padding: 1rem;
+                        background-color: #fff;
+                        color: $main-color;
+                        svg{
+                            background-color: $main-color;
+                            color: #fff;
+                        }
+                        &:hover{
+                            background-color: $main-color;
+                            color: #fff;
+                            svg{
+                                background-color: #fff;
+                                color: $main-color
+                            }
+                        }
+                    }
+                }
+                .right{
+                    @include breakBoints(Tablet)
+                    {
+                        width: 100%;
+                        img{
+                            max-width: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    img{
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+.recent-listing
+{
+    padding: 100px 0;
+    .container 
+    {
+        >{
+            h2{
+                font-size: 40px;
+                margin-top: 0;
+            }
+            p{
+                color:$main-color;
+            }
+        }
+        .swiper-container
+        {
+            position: relative;
+        .row {
+            overflow: hidden;
+            .col{
+                width: 100%;
+                position: relative;
+                .listin-content
+                {
+                    display: flex;
+                    gap: 2rem;
+                    background-color: #eee;
+                    margin-bottom: 2rem;
+                    border-radius: 10px;
+                    @include breakBoints(Tablet)
+                    {
+                        flex-direction: column;
+                    }
+                    .left {
+                        img {
+                            border-top-left-radius: 10px;
+                            border-bottom-left-radius: 10px;
+                            max-width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            @include breakBoints(Tablet)
+                            {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .right {
+                        flex: 1;
+                        padding: 2rem;
+
+                        .head{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 5rem;
+                            @include breakBoints(Tablet)
+                            {
+                                flex-direction: column;
+                                gap: 0;
+                            }
+                            .stars
+                            {
+                                @extend %flex;
+                                gap: 1rem;
+                                color: #777;
+                                @include breakBoints(Tablet)
+                                {
+                                 order: -1
+                                }
+                                ul{
+                                    @extend %flex;
+                                    gap: .5rem;
+                                    
+                                }
+                            }
+                        }
+                        > span{
+                            color: #777;
+                        }
+                        .price {
+                            @extend %flex;
+                            gap: 1rem;
+                            margin: 1rem 0;
+                            img{
+                                padding: .5rem;
+                                background-color: $secondary-color;
+                                border-radius: 50%;
+                                
+                            }
+                        }
+                        > P{
+                            color: #777;
+                            span{
+                                color: black;
+                            }
+                        }
+                        .badrooms{
+                            margin-top: 2rem;
+                            .badroom{
+                                @extend %flex;
+                                gap: 1rem;
+                                margin-bottom: 1rem;
+                                font-size: 1.3rem;
+                            }
+                        }
+                        .add-button{
+                            width: fit-content;
+                            margin-left: auto ;
+                            @include breakBoints(Tablet)
+                            {
+                             margin-left: 0;
+                             margin-top: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-pagination
+        {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -40px;
+            ul 
+            {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                li{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid  #ddd;
+                    cursor: pointer;
+                    &.active{
+                        background-color: $main-color;
+                    }
+                    }
+
+            }
+        }
+    }
+    }
+}
