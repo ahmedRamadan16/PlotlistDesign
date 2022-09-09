@@ -78,7 +78,7 @@ header.sticky nav ul li a {
 
 .landing {
   padding-top: 91.45px;
-  background-image: url("../../../imgs/heading-bg.jpg");
+  background-image: url("../imgs/heading-bg.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -236,7 +236,7 @@ footer .row .col:last-of-type .phones, footer .row .col:nth-of-type(2) .links, .
 /*categories*/
 .home-landing {
   padding-top: 91.45px;
-  background-image: url("../../../imgs/banner-bg.jpg");
+  background-image: url("../imgs/banner-bg.jpg");
   background-size: cover;
   background-position: center center;
   padding: 290px 0 180px 0;
